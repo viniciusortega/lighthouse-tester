@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lhci:mobile": "lhci autorun",
+    "lhci:desktop": "lhci autorun --collect.settings.preset=desktop"
+  },
+  "dependencies": {
+    "nuxt": "^2.15.8"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.9.0"
+  }
+}

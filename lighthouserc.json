@@ -1,0 +1,17 @@
+{
+    "ci": {
+      "collect": {
+        "startServerCommand": "yarn build && yarn start",
+        "url": ["http://localhost:42731/"],
+        "numberOfRuns": 3
+      },
+      "upload": {
+        "target": "temporary-public-storage"
+      },
+      "assert": {
+        "assertions": {
+          "performance-budget": ["error", {"minScore":50}]
+        }
+      }
+    }
+}

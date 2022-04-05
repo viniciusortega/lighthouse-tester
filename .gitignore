@@ -1,3 +1,6 @@
+#.lighthouseci
+.lighthouseci
+
 # Logs
 logs
 *.log
