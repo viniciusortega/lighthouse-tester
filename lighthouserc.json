@@ -2,7 +2,7 @@
     "ci": {
       "collect": {
         "startServerCommand": "yarn build && yarn start",
-        "url": ["http://localhost:42731/"],
+        "url": ["http://localhost:34331/"],
         "numberOfRuns": 3
       },
       "upload": {
