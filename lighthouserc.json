@@ -1,10 +1,5 @@
 {
     "ci": {
-      "collect": {
-        "startServerCommand": "yarn build && yarn start",
-        "url": ["http://localhost:34331/"],
-        "numberOfRuns": 3
-      },
       "upload": {
         "target": "temporary-public-storage"
       },
