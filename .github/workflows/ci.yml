@@ -16,6 +16,13 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: lighthouse mobile audit
+        run: yarn lhci:mobile
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        with:
+          budgetPath: ./budget.json # test performance budgets
+
       - name: lighthouse desktop audit
         run: yarn lhci:desktop
         env:
